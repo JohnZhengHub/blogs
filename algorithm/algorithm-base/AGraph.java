@@ -11,12 +11,11 @@ import java.util.Queue;
 public class AGraph {
 	private VNode[] adjlist;
 	private int n,e;
-	private static class VNode{
+	private class VNode{
 		int data; //顶点信息
 		ArcNode firstarc;
-		
 	}
-	private static class ArcNode{
+	private class ArcNode{
 		int adjvex;
 		ArcNode nextarc;
 		int info; //边的相关信息，如全职
