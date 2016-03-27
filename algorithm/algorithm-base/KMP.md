@@ -19,7 +19,7 @@ ABCDAB"的前缀为[A, AB, ABC, ABCD, ABCDA]，后缀为[BCDAB, CDAB, DAB, AB, B
 "ABCDABD"的前缀为[A, AB, ABC, ABCD, ABCDA, ABCDAB]，后缀为[BCDABD, CDABD, DABD, ABD, BD, D]，共有元素的长度为0。
 
 
-  public int kmp(String str,String subStr){
+  	public int kmp(String str,String subStr){
   		char[] main = str.toCharArray();
   		char[] sub = subStr.toCharArray();
   		int[] next = makeNext(sub);
