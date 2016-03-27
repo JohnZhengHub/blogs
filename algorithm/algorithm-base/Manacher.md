@@ -63,3 +63,9 @@ Manacher算法，其时间复杂度为O(n),主要用于找出字符串S的最长
 	        }
 	        return sb.toString();
 	    }
+
+
+## 参考资料
+http://blog.sina.com.cn/s/blog_3fe961ae0101iwc2.html
+
+http://www.cnblogs.com/biyeymyhjob/archive/2012/10/04/2711527.html
