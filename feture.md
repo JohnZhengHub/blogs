@@ -6,3 +6,9 @@ Future是一个接口，该接口用来异步的处理结果,Future对象本身�
  - 获取已完成的任务 ,isDone()
  
  Future 是有其局限性的。Future 主要功能在于获取任务执行结果和对异步任务的控制。但如果要获取批量任务的执行结果，从上面的例子我们已经可以看到，单使用 Future 是很不方便的。其原因在于：一是我们没有好的方法去获取第一个完成的任务；二是 Future.get 是阻塞方法，使用不当会造成线程的浪费。解决第一个问题可以用 CompletionService 解决，CompletionService 提供了一个 take() 阻塞方法，用以依次获取所有已完成的任务。
+
+## FutureTask
+FutureTask除了Future接口外,还实现了Runnable接口,因此FutureTask可以交给Executor执行,也可以由调用线程直接执行.
+
+FutureTask处于下面3种状态:
+1. 未启动,
