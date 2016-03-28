@@ -10,7 +10,12 @@
 
 ## 对程序员可见性保证
 ### happen-before原则
-JMM向程序员保证,如果一个操作执行的结果需要对另一个操作可见，那么这两个操作(同一个线程或不同线程)必须存在happens-before关系。
+JMM向程序员保证,如果一个操作执行的结果需要对另一个操作可见，那么这两个操作(同一个线程或不同线程)必须存在happens-before关系。happen-before的关系定义如下:
+
+ 1. 如果一个操作happens-before另一个操作,那么第一个操作的执行结果将对第二个操作可见,而且第一个操作必须在第二个操作之前.
+ 2. 两个操作之间存在happens-before关系,并不意味着java平台具体实现必须耀happens-before关系指定顺序来执行.
+
+hapens-before规则如下:
  - **程序顺序规则**：一个线程的每个操作happen-before与该线程的任意后续操作。
  - **监视器锁规则**：一个锁的解锁，happens-before于随后这个锁的加锁。
  - **Volatile变量规则**：对一个volatile域的写，happens-before于任意后续这个域的读。
