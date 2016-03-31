@@ -1,7 +1,7 @@
 
  - 创建会话窗口 
     
-    screen  会话名字
+    screen -S  会话名字
 
     然后直接输入指令如 bash run.sh
     
