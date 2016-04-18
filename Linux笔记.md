@@ -26,4 +26,8 @@ source filename 与 sh filename 及./filename执行脚本的区别在那里呢�
 - **语法**：# curl [option] [url]
 - **地址**:http://www.linuxdiyf.com/linux/2800.html
 
+### cd $(dirname $0)
+ - $0 表示当前动行的命令名，一般用于shell 脚本中.
+ - dirname 用于取指定路径所在的目录 ，如 dirname /home/ikidou   结果为 /home
+ - 所以结合以上分析，结果为【 切换到 脚本 所在的目录】
 
