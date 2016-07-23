@@ -4,7 +4,7 @@
 ## 思路
 定义两个指针low, high分别指向数组的头尾， 如果两个指针的和大于指定值，则减少big的值否则增大small的值。直到指针和为指定数或两指针相遇。
 ## 代码实现
-   public ArrayList<Integer> FindNumbersWithSum(int [] array,int sum) {
+     public ArrayList<Integer> FindNumbersWithSum(int [] array,int sum) {
         ArrayList<Integer> result = new ArrayList<Integer>();
         if(array == null || array.length == 0)
             return result;
